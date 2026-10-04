@@ -396,3 +396,11 @@ p{margin:0;text-wrap:pretty}
 /* районы и колонки — без цветных маркеров */
 .dist li::before{background:var(--ink2)}
 .col{border-top:3px solid var(--ink)}
+
+/* логотип: картинка клиента, при ошибке — запасной знак с надписью */
+.logo-img{display:block;height:44px;width:auto;max-width:190px;object-fit:contain}
+.logo-fb{display:none;align-items:center;gap:10px}
+.logo.nologo .logo-img{display:none}
+.logo.nologo .logo-fb{display:flex}
+.ft .logo-img{height:48px}
+@media(max-width:369px){.logo-img{height:38px;max-width:150px}}
