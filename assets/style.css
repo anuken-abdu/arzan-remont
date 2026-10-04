@@ -363,3 +363,36 @@ p{margin:0;text-wrap:pretty}
 @media(max-width:639px){.tile{min-height:0;padding-bottom:58px}}
 @media(min-width:640px) and (max-width:1023px){.tiles-grid .tile:last-child:nth-child(odd){grid-column:span 2}}
 @media(min-width:1024px){.tiles-grid .tile:last-child:nth-child(3n+2){grid-column:span 2}.tiles-grid .tile:last-child:nth-child(3n+1){grid-column:span 3}}
+
+/* ===== спокойная гамма: тёмно-синий + один фиолетовый акцент ===== */
+:root{--lime:#A996FF}
+.hd-tel{background:var(--vio);color:#fff}
+.hd-tel:hover{background:var(--vio-d)}
+.menu-x{background:var(--vio);color:#fff}
+.mcont a,.ft .big{color:#fff}
+.logo b{color:#A996FF}
+.hero::before{opacity:.45}
+.dark{background:var(--night)}
+.ft{background:var(--night)}
+.menu-p{background:var(--night)}
+
+/* подписи на фото — всегда читаются */
+.ph figcaption{left:0;right:auto;bottom:0;max-width:100%;padding:9px 14px;background:rgba(20,18,43,.9);font-size:.92rem;line-height:1.3}
+
+/* плитки услуг без иконок */
+.tile{min-height:0;padding:26px 22px 24px;gap:10px}
+.tile-t{font-size:1.15rem}
+.tile-go{position:static;width:auto;height:auto;display:inline-flex;align-items:center;gap:6px;margin-top:6px;background:none;color:#A996FF;font-weight:700;font-size:.92rem}
+.tile-go svg{width:16px;height:16px;transition:transform .2s}
+.tile:hover .tile-go{background:none;color:#fff}
+.tile:hover .tile-go svg{transform:translateX(4px)}
+@media(max-width:639px){.tile{padding-bottom:24px}}
+
+/* блок вызова — без второго яркого цвета */
+.call{background:var(--night2)}
+.call p{color:#C9CFEE}
+.call-tel{color:#fff}
+
+/* районы и колонки — без цветных маркеров */
+.dist li::before{background:var(--ink2)}
+.col{border-top:3px solid var(--ink)}
