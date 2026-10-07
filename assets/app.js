@@ -3,7 +3,7 @@
   'use strict';
 
   /* ---------- конверсии Google Ads: отдельный ярлык на каждый канал ---------- */
-  var ADS_ID = 'AW-XXXXXXXXXX';
+  var ADS_ID = 'AW-18499979618';
   var LABELS = {
     call: 'CALL_LABEL',
     whatsapp: 'WHATSAPP_LABEL'
