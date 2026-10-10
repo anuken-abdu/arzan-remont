@@ -404,3 +404,14 @@ p{margin:0;text-wrap:pretty}
 .logo.nologo .logo-fb{display:flex}
 .ft .logo-img{height:48px}
 @media(max-width:369px){.logo-img{height:38px;max-width:150px}}
+
+/* все услуги — компактный список ссылок */
+.alls{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+@media(min-width:640px){.alls{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1024px){.alls{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.alls a{display:flex;align-items:center;justify-content:space-between;gap:12px;height:100%;padding:16px 18px;background:#fff;color:var(--ink);font-weight:700;text-decoration:none;transition:background .2s,color .2s}
+.alls a svg{width:16px;height:16px;flex-shrink:0;color:var(--vio);transition:transform .2s}
+.alls a:hover{background:var(--night);color:#fff}
+.alls a:hover svg{transform:translateX(4px);color:#fff}
+.alls{background:none;border:0;gap:0}
+.alls li{border:1px solid var(--line);margin:0 -1px -1px 0}
